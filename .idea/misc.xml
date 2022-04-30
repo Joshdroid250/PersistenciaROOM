@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_actualizar.xml" value="0.14990942028985507" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_actualizar_clasificacion.xml" value="0.3625" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_actualizar_genero.xml" value="0.33" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_actualizar_genero2.xml" value="0.14990942028985507" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_add_clasificacion.xml" value="0.25" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_add_genero.xml" value="0.22" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_list_clasificacion.xml" value="0.3484375" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_list_genero.xml" value="0.1" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_menu_principal.xml" value="0.35733695652173914" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/fragment_nuevo_usuario.xml" value="0.33" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/list_clasificacion.xml" value="0.18541666666666667" />
+        <entry key="..\:/PersistenciaROOM/app/src/main/res/layout/list_genero.xml" value="0.25" />
         <entry key="..\:/Users/campo/AndroidStudioProjects/persistenciaroom/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/campo/AndroidStudioProjects/persistenciaroom/app/src/main/res/layout/fragment_actualizar.xml" value="0.1" />
         <entry key="..\:/Users/campo/AndroidStudioProjects/persistenciaroom/app/src/main/res/layout/fragment_lista.xml" value="0.1" />

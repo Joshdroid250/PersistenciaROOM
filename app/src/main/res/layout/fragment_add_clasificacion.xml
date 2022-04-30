@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.actualizar.agregar.addClasificacion">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        ></ImageView>
+
+    <EditText
+        android:id="@+id/edtAbreviacion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="Ingrese Abreviacion"
+        ></EditText>
+    <EditText
+        android:id="@+id/edtnombreC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="Ingrese Nombre de clasificacion"
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/btnSaveC"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Guardar"
+
+        ></Button>
+
+</LinearLayout>

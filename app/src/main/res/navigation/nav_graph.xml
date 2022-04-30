@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/listaFragment">
+    app:startDestination="@id/menuPrincipal">
 
     <fragment
         android:id="@+id/listaFragment"
@@ -38,7 +38,88 @@
             android:name="currentUsuario"
             app:argType="ni.edu.uca.persistenciaroom.bd.dao.entidades.UserEntity" />
 
-        app:argType="ni.edu.uca.persistenciaroom.bd.dao.entidades.UserEnity"
+    </fragment>
+    <fragment
+        android:id="@+id/menuPrincipal"
+        android:name="ni.edu.uca.persistenciaroom.MenuPrincipal"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menuPrincipal_to_listaFragment"
+            app:destination="@id/listaFragment" />
+        <action
+            android:id="@+id/action_menuPrincipal_to_listGenero"
+            app:destination="@id/listGenero" />
+        <action
+            android:id="@+id/action_menuPrincipal_to_listClasificacion"
+            app:destination="@id/listClasificacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/listGenero"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.lista.listGenero"
+        android:label="fragment_list_genero"
+        tools:layout="@layout/fragment_list_genero" >
+        <action
+            android:id="@+id/action_addGenero"
+            app:destination="@id/addGenero" />
+        <action
+            android:id="@+id/action_listaAactualizarGenero"
+            app:destination="@id/actualizarGenero" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGenero"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.agregar.addGenero"
+        android:label="fragment_add_genero"
+        tools:layout="@layout/fragment_add_genero" >
+        <action
+            android:id="@+id/action_retornarListGenero"
+            app:destination="@id/listGenero" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizarGenero"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.ActualizarGenero"
+        android:label="fragment_actualizar_genero"
+        tools:layout="@layout/fragment_actualizar_genero">
 
+        <action
+            android:id="@+id/action_actualizarGenero2_to_listGenero"
+            app:destination="@id/listGenero" />
+        <argument
+            android:name="currentGenero"
+            app:argType="ni.edu.uca.persistenciaroom.bd.dao.entidades.GeneroEntity" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/listClasificacion"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.lista.listClasificacion"
+        android:label="fragment_list_clasificacion"
+        tools:layout="@layout/fragment_list_clasificacion" >
+        <action
+            android:id="@+id/action_listClasificacion_to_addClasificacion"
+            app:destination="@id/addClasificacion" />
+        <action
+            android:id="@+id/action_listClasificacion_to_actualizarClasificacion"
+            app:destination="@id/actualizarClasificacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClasificacion"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.agregar.addClasificacion"
+        android:label="fragment_add_clasificacion"
+        tools:layout="@layout/fragment_add_clasificacion" >
+        <action
+            android:id="@+id/action_addClasificacion_to_listClasificacion"
+            app:destination="@id/listClasificacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizarClasificacion"
+        android:name="ni.edu.uca.persistenciaroom.fragments.actualizar.ActualizarClasificacion"
+        android:label="fragment_actualizar_clasificacion"
+        tools:layout="@layout/fragment_actualizar_clasificacion" >
+        <action
+            android:id="@+id/action_actualizarClasificacion_to_listClasificacion"
+            app:destination="@id/listClasificacion" />
+        <argument
+            android:name="currentClasificacion"
+            app:argType="ni.edu.uca.persistenciaroom.bd.dao.entidades.ClasificacionEntity" />
     </fragment>
 </navigation>
